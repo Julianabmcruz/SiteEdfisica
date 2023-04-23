@@ -1,0 +1,229 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Cores */
+:root {
+    --primary-color: #27AE60;
+    --secondary-color: #2C3E50;
+    --bg-color: #F5F5F5;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color 0.2s ease-in-out;
+}
+
+.nav li a:hover {
+    color: var(--primary-color);
+}
+
+/* Banner */
+#banner {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 50px 0;
+}
+
+#banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: var(--primary-color);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Sobre */
+#sobre {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sobre p {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Planos */
+#planos {
+    background-color: var(--bg-color);
+    padding: 50px 0;
+}
+
+#planos h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.col {
+    flex-basis: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Formulário de Contato */
+#contato {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.btn-submit {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #219653;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 50px 0;
+    font-size: 0.8rem;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a {
+    display: block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+}
+
+.social a:hover {
+    color: var(--primary-color);
+}
+
+
